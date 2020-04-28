@@ -1,6 +1,6 @@
 def decrypt(plaintext, key):
     plaintext = list(plaintext)
-    key = list(key.trim())
+    key = list(key.strip())
     ciphertext = []
 
     x = 0
@@ -16,7 +16,7 @@ def decrypt(plaintext, key):
 
 def encrypt(plaintext, key):
     plaintext = list(plaintext)
-    key = list(key.trim())
+    key = list(key.strip())
     ciphertext = []
 
     addL = True
