@@ -1,0 +1,17 @@
+1.
+    A.  Alice sends Bob A = 573450335
+        Bob's secret number = 544097
+        Bob sends Alice B = 337242414
+        The private key is : 
+        661737200
+
+    B.  419341648852474208
+2.  
+    A.  1 - get inv modulo of the key and alphabet size:
+                inverse of (key)mod(a.size) is the value b < a.size where
+                ((key * x) % a.size == 1)
+        2 - use the inv modulo as the "new key":
+            for every letter -> new letter is alphabet.index(letter)*nkey)%a.size
+    
+    B.  IDONTKNOWRICKITLOOKSFAKE -> QGCAMUACSIQEUQMWCCUKKAUI
+        
