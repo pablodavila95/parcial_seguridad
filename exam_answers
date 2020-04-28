@@ -6,6 +6,7 @@
         661737200
 
     B.  419341648852474208
+
 2.  
     A.  1 - get inv modulo of the key and alphabet size:
                 inverse of (key)mod(a.size) is the value b < a.size where
@@ -14,4 +15,19 @@
             for every letter -> new letter is alphabet.index(letter)*nkey)%a.size
     
     B.  IDONTKNOWRICKITLOOKSFAKE -> QGCAMUACSIQEUQMWCCUKKAUI
-        
+        QGCAMUACSIQEUQMWCCUKKAUI -> QGCAMUACSIQEUQMWCCUKKAUI
+
+        The multiplicative inverse of “a modulo m” exists only if a and m are relatively prime,
+        that means that the gcd of "a" and "b" must be 1. In this case, 2 and 26 have a gcd of 2
+        so the inverse doesn't exist and the text can't be decrypted
+
+3.  
+    A.  
+        CPXBAAWCAN Key: 5 -> XKSWVVRXVI != IVXRVVWSKX 
+        AXRWQXLLRGXGCGENJSMHDP Key: 5 -> VSMRLSGGMBSBXBZIENHCYK != VSMRSLGGMBRBXBZIENHCYY
+
+    B.  THEYREHERE
+        MAXIMUSDECIMUSMERIDIUS
+
+4.
+    A
