@@ -1,9 +1,3 @@
-plaintext = list(input('Message:\n'))
-tk = input('Key:\n')
-tk = tk.replace(' ', '')
-key = list(tk)
-
-
 def decrypt(plaintext, key):
     plaintext = list(plaintext)
     key = list(key.trim())
