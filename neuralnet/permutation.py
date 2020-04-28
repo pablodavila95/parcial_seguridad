@@ -35,6 +35,3 @@ def encrypt(plaintext, key):
             ciphertext.append(plaintext[lp])
         x += 1
     return(''.join(map(str, ciphertext)))
-
-
-print(encrypt("1010100", "1234"))
