@@ -41,4 +41,7 @@
         Time = 1.813×10^23 ms
         according to wolfram, that's about 5.746×10^12 average Gregorian years
 
-    C.  
+    C.  If you convert Hexadecimal to binary, for every letter you will have 4 binary digits
+        meaning the key length changes to 20 letters * 4 digits = 80 digits.
+        However, 80 digits with 2 choices {0,1} are 2^80 = 1.208925819614629174706176 × 10^24 keys
+        which is the same as keeping it in hexadecimal
