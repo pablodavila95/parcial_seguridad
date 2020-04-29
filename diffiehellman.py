@@ -2,7 +2,6 @@ import numpy as calculate
 import math
 
 
-
 def alt_find_secret_key_with_A_g_p(b):
     A = 573450335
     g = 642281
