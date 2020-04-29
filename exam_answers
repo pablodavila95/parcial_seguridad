@@ -45,3 +45,19 @@
         meaning the key length changes to 20 letters * 4 digits = 80 digits.
         However, 80 digits with 2 choices {0,1} are 2^80 = 1.208925819614629174706176 × 10^24 keys
         which is the same as keeping it in hexadecimal
+
+5.  A.
+    B.
+    C.
+
+6.  A.
+    B.
+    C.
+    D.
+
+7.  A.
+
+8.  A.
+    B.
+    C.
+
