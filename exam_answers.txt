@@ -46,9 +46,12 @@
         However, 80 digits with 2 choices {0,1} are 2^80 = 1.208925819614629174706176 × 10^24 keys
         which is the same as keeping it in hexadecimal
 
-5.  A.
-    B.
-    C.
+5.  A. On systems with limited capabilities to execute logic or bitwise operations.
+    B. It has worse security than the XOR version since it is more likely to have unflipped bits 
+    and could potentially show the information partially, which may make it easier to interpet.
+    C. It is not a safer option
+
+    
 
 6.  A.
     B.
