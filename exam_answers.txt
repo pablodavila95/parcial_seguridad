@@ -77,6 +77,13 @@
 
         >> Comment: Correct. It is no even a valid option.
 
-6.  A.  
+6.  A.  If key size is k, there can be 2^k.
+
+    B.  If the key length is 10, the number of combinations is 2^10.
+
+    C.  It is the same as in the one-time pad cipher, 2^10. Based on the formula defined in A.
+
+    D.  Because we are using binary, it produces the same degree of security as the one-time pad cipher (the safest encryption) so we can 
+        argue that permutation cipher is safe in this case.
 
 7.  A.
