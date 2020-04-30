@@ -92,4 +92,10 @@
         what the answer is. 
 
 8.  A.  The encrypted message for Alice is: 343231970106150475720500
-    B.  Bob's public key would be 576186617609 using a generator (rsa.java). Private key is 375847428473.   
+
+    B.  Bob's public key would be 761741328149 using a generator (rsa.java). Private key is 519050374733.
+    d is 519050374733
+
+    C.  The string to send is 182121111411101220. To encrypt, Alice would take the public key from Bob and use it to encrypt the message.
+        This will result in the following string: 563189175961. To decrypt, Bob would use his private key and his public key combined to get the original message.
+        (after changing the numbers to letters back again).
