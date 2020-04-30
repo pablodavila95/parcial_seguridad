@@ -31,12 +31,12 @@
 
 3.  
     A.  
-        CPXBAAWCAN Key: 5 -> XKSWVVRXVI != IVXRVVWSKX 
-        AXRWQXLLRGXGCGENJSMHDP Key: 5 -> VSMRLSGGMBSBXBZIENHCYK != VSMRSLGGMBRBXBZIENHCYY
+        IVXRVVWSKX Key: 5 -> NACWAABXPC != CPXBAAWCAN 
+        VSMRSLGGMBRBXBZIENHCYY Key: 5 -> AXRWXQLLRGWGCGENJSMHDD != AXRWQXLLRGXGCGENJSMHDP
 
         >> Comment: Correct, but it was luck. You need to apply the shift cipher on the ciphertext to produce the MAC. If the MAC you obtain is different to the one you receive, then the message has been altered. What you did was to decrypt the MAC by using the shift cipher with a key of 5. Please note that this may not always work since it depends on the MAC function. Change it before you submit the final solution.
 
-    B.  THEYREHERE
+    B.  YOUCOMPLETEME
         MAXIMUSDECIMUSMERIDIUS
 
         >> Comment: 1/2 Correct. One of the plaintext corresponds to a ciphertext that was altered. Revise this solution.
