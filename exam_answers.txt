@@ -90,3 +90,6 @@
         1-01. To obtain the second bit in the key, we would need to reverse the operation with XOR using another plaintext but we don't have it. If we had a
         complete english alphabet, we could maybe interpret the word using the human understanding of language. Since we are talking about bits, we cannot guess
         what the answer is. 
+
+8.  A.  The encrypted message for Alice is: 343231970106150475720500
+    B.  Bob's public key would be 576186617609 using a generator (rsa.java). Private key is 375847428473.   
