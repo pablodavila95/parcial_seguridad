@@ -13,12 +13,13 @@
 
 2.  
     A.  1 - get inv modulo of the key and alphabet length:
-                inverse of (key)mod(a.size) is the value b < a.len where
-                ((key * x) % a.len == 1)
-        2 - use the inv modulo as the "new key":
-            for every letter -> new letter is alphabet.index(letter)*nkey)%a.size
+        2 - inverse of (key)mod(a.size) is the value b < a.len where
+        3 - evaluate the following operation -> ((key * x) % a.len == 1)
+        4 - use the inv modulo as the "new key":
+        5 - for every letter -> new letter is alphabet.index(letter)*nkey)%a.size
 
-        >> Comment: The answer points towards the right direction, but you didn't decrypt the message. The answer requires a step by step example.
+            plaintext -> MAYTHEFORCEBEWITHYOU
+
     
     B.  IDONTKNOWRICKITLOOKSFAKE -> QGCAMUACSIQEUQMWCCUKKAUI
         QGCAMUACSIQEUQMWCCUKKAUI -> QGCAMUACSIQEUQMWCCUKKAUI
@@ -38,8 +39,6 @@
 
     B.  YOUCOMPLETEME
         MAXIMUSDECIMUSMERIDIUS
-
-        >> Comment: 1/2 Correct. One of the plaintext corresponds to a ciphertext that was altered. Revise this solution.
 
 4.
     A.  Hexadecimal alphabet = {'0123456789ABCDEF'} len(Alphabet) = 16 len(Ciphertext) = 20
@@ -64,20 +63,20 @@
 
         >> Comment: Correct.
 
-5.  A.  On systems with limited capabilities to execute logic or bitwise operations. Also AND is potentially and irreversible operation and might not be appropriate for
+5.  
+    A.  On systems with limited capabilities to execute logic or bitwise operations. Also AND is potentially and irreversible operation and might not be appropriate for
         encryption.
 
-        >> Comment: I would consider this answer correct. However, the truth is that this version of the cipher is not even a cipher. Once you AND two bits, and the result is false, there is no way to get back the plaintext, since there are three valid values to choose from. Then, this strategy does not work at all.    
 
     B.  It has worse security than the XOR version since it is more likely to have unflipped bits and could potentially show the information partially, which may make it easier to interpet.
-
-        >> Comment: Kind of correct. Although it does not work for the reasons I previously mentioned, it is clear that, for the cases where it works, it will surely leave some patterns that will make it vulnerable.
+        Will not actually work correctly with AND operator.
 
     C.  It is not a safer option.
 
         >> Comment: Correct. It is no even a valid option.
 
-6.  A.  If key size is k, there can be 2^k.
+6.  
+    A.  If key size is k, there can be 2^k.
 
     B.  If the key length is 10, the number of combinations is 2^10.
 
@@ -86,12 +85,14 @@
     D.  Because we are using binary, it produces the same degree of security as the one-time pad cipher (the safest encryption) so we can 
         argue that permutation cipher is safe in this case.
 
-7.  A.  We can decipher the key bits with the exposed plaintext using XOR to reverse the operation bit by bit. Using this we know so far that the key is 
+7.  
+    A.  We can decipher the key bits with the exposed plaintext using XOR to reverse the operation bit by bit. Using this we know so far that the key is 
         1-01. To obtain the second bit in the key, we would need to reverse the operation with XOR using another plaintext but we don't have it. If we had a
         complete english alphabet, we could maybe interpret the word using the human understanding of language. Since we are talking about bits, we cannot guess
         what the answer is. 
 
-8.  A.  The encrypted message for Alice is: 343231970106150475720500
+8.  
+    A.  The encrypted message for Alice is: 343231970106150475720500
 
     B.  Bob's public key would be 761741328149 using a generator (rsa.java). Private key is 519050374733.
     d is 519050374733
