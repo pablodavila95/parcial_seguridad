@@ -65,7 +65,7 @@
         >> Comment: Correct.
 
 5.  A.  On systems with limited capabilities to execute logic or bitwise operations. Also AND is potentially and irreversible operation and might not be appropriate for
-encryption.
+        encryption.
 
         >> Comment: I would consider this answer correct. However, the truth is that this version of the cipher is not even a cipher. Once you AND two bits, and the result is false, there is no way to get back the plaintext, since there are three valid values to choose from. Then, this strategy does not work at all.    
 
@@ -76,3 +76,7 @@ encryption.
     C.  It is not a safer option.
 
         >> Comment: Correct. It is no even a valid option.
+
+6.  A.  
+
+7.  A.
