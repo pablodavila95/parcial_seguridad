@@ -86,4 +86,7 @@
     D.  Because we are using binary, it produces the same degree of security as the one-time pad cipher (the safest encryption) so we can 
         argue that permutation cipher is safe in this case.
 
-7.  A.
+7.  A.  We can decipher the key bits with the exposed plaintext using XOR to reverse the operation bit by bit. Using this we know so far that the key is 
+        1-01. To obtain the second bit in the key, we would need to reverse the operation with XOR using another plaintext but we don't have it. If we had a
+        complete english alphabet, we could maybe interpret the word using the human understanding of language. Since we are talking about bits, we cannot guess
+        what the answer is. 
