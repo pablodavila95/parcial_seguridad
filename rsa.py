@@ -14,7 +14,3 @@ def convertToDecimal(plaintext):
     return ''.join(map(str, decimal))
 
 print(convertToDecimal("ILLBEBACK"))
-
-#C cipher, d private, n public
-def decrypt(C):
-    return calculate.mod(C^d, n)
