@@ -11,15 +11,15 @@ def generate_data(filename, string_length, list_size):
 
     def write_csv(filename):
         with open('neuralnet/' + filename + '.csv', 'w') as result_file:
-            wr = csv.writer(result_file)
+            wr = csv.writer(result_file, quoting=csv.QUOTE_NONE, escapechar=' ')
             for string in generate_binary_string_csv(string_length, list_size):
-                wr.writerow([string, ])
+                wr.writerow([string])
 
     def generate_binary_string(length):
         generated_string = []
         for _ in range(length):
             generated_string.append(random.randint(0, 1))
-        return ''.join(map(str, generated_string))
+        return ','.join(map(str, generated_string))
 
     def generate_binary_string_csv(string_length, list_size):
         strings_list = []
