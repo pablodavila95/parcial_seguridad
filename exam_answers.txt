@@ -5,7 +5,11 @@
         The private key is : 
         661737200
 
+        >> Comment: The answer is correct.
+
     B.  033040811485173401
+
+        >> Comment: The answer is correct.
 
 2.  
     A.  1 - get inv modulo of the key and alphabet length:
@@ -13,6 +17,8 @@
                 ((key * x) % a.len == 1)
         2 - use the inv modulo as the "new key":
             for every letter -> new letter is alphabet.index(letter)*nkey)%a.size
+
+        >> Comment: The answer points towards the right direction, but you didn't decrypt the message. The answer requires a step by step example.
     
     B.  IDONTKNOWRICKITLOOKSFAKE -> QGCAMUACSIQEUQMWCCUKKAUI
         QGCAMUACSIQEUQMWCCUKKAUI -> QGCAMUACSIQEUQMWCCUKKAUI
@@ -21,13 +27,19 @@
         that means that the gcd of "a" and "b" must be 1. In this case, 2 and 26 have a gcd of 2
         so the inverse doesn't exist and the text can't be decrypted
 
+        >> Comment: The answer is correct. However, please note that you can use 2 as the key and will retrieve something. It is not going to be the correct plaintext, but some parts of it. What it will not be is the same string given as input. Then, QGCAMUACSIQEUQMWCCUKKAUI -> QGCAMUACSIQEUQMWCCUKKAUI is not correct (but not completely wrong).
+
 3.  
     A.  
         CPXBAAWCAN Key: 5 -> XKSWVVRXVI != IVXRVVWSKX 
         AXRWQXLLRGXGCGENJSMHDP Key: 5 -> VSMRLSGGMBSBXBZIENHCYK != VSMRSLGGMBRBXBZIENHCYY
 
+        >> Comment: Correct, but it was luck. You need to apply the shift cipher on the ciphertext to produce the MAC. If the MAC you obtain is different to the one you receive, then the message has been altered. What you did was to decrypt the MAC by using the shift cipher with a key of 5. Please note that this may not always work since it depends on the MAC function. Change it before you submit the final solution.
+
     B.  THEYREHERE
         MAXIMUSDECIMUSMERIDIUS
+
+        >> Comment: 1/2 Correct. One of the plaintext corresponds to a ciphertext that was altered. Revise this solution.
 
 4.
     A.  Hexadecimal alphabet = {'0123456789ABCDEF'} len(Alphabet) = 16 len(Ciphertext) = 20
@@ -36,31 +48,30 @@
         keys = number of choices in alphabet ^  number of choices in key which is len(key)
         keys = 16^20 = 1.208925819614629174706176 × 10^24 keys
 
+        >> Comment: Correct.
+
     B.  Worst-case scenario, the last key analyzed is the correct key
         so Time = (1.208925819614629174706176 × 10^24) * 0.15ms
         Time = 1.813×10^23 ms
         according to wolfram, that's about 5.746×10^12 average Gregorian years
+
+        >> Comment: Correct.
 
     C.  If you convert Hexadecimal to binary, for every letter you will have 4 binary digits
         meaning the key length changes to 20 letters * 4 digits = 80 digits.
         However, 80 digits with 2 choices {0,1} are 2^80 = 1.208925819614629174706176 × 10^24 keys
         which is the same as keeping it in hexadecimal
 
-5.  A. On systems with limited capabilities to execute logic or bitwise operations.
-    B. It has worse security than the XOR version since it is more likely to have unflipped bits 
-    and could potentially show the information partially, which may make it easier to interpet.
-    C. It is not a safer option
+        >> Comment: Correct.
 
-    
+5.  A.  On systems with limited capabilities to execute logic or bitwise operations.
 
-6.  A.
-    B.
-    C.
-    D.
+        >> Comment: I would consider this answer correct. However, the truth is that this version of the cipher is not even a cipher. Once you AND two bits, and the result is false, there is no way to get back the plaintext, since there are three valid values to choose from. Then, this strategy does not work at all.    
 
-7.  A.
+    B.  It has worse security than the XOR version since it is more likely to have unflipped bits and could potentially show the information partially, which may make it easier to interpet.
 
-8.  A.
-    B.
-    C.
+        >> Comment: Kind of correct. Although it does not work for the reasons I previously mentioned, it is clear that, for the cases where it works, it will surely leave some patterns that will make it vulnerable.
 
+    C.  It is not a safer option.
+
+        >> Comment: Correct. It is no even a valid option.
