@@ -19,10 +19,13 @@ public class Main{
         /*
         Run to encrypt
         */
-        C = encrypt("17102829102110311828291011101134", "678202902873007650996733", "65537");
+        //string to encrypt, public key, e
+        C = encrypt("411101220", "761741328149", "65537");
         System.out.println("C = " + C);
         System.out.println("===============");
-        P = decrypt("375053642593", "546545980597", "341526681473");
+
+        //encrypted string, private
+        P = decrypt("41111244260", "761741328149", "519050374733");
         System.out.println("P = " + P);
      }
      
@@ -61,4 +64,4 @@ public class Main{
         d = new BigInteger(dText);
         return C.modPow(d, n);
      }
-}   
+}

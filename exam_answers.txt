@@ -96,6 +96,7 @@
     B.  Bob's public key would be 761741328149 using a generator (rsa.java). Private key is 519050374733.
     d is 519050374733
 
-    C.  The string to send is 182121111411101220. To encrypt, Alice would take the public key from Bob and use it to encrypt the message.
-        This will result in the following string: 563189175961. To decrypt, Bob would use his private key and his public key combined to get the original message.
-        (after changing the numbers to letters back again).
+    C.  The string to send is 182121111 411101220. To encrypt, Alice would take the public key from Bob and use it to encrypt the message with the caveat that the message will
+        be split in 2 to fit inside the RSA key length (Bob's key is quite short).
+        This will result in the following string: 41111244260 250001495370. To decrypt, Bob would use his private key and his public key combined to get the original message.
+        (after changing the numbers to letters back again, one string at a time with the same parameters).
