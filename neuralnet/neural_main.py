@@ -21,4 +21,4 @@ def write_csv(filename, key):
             wr.writerow([string, ])
 
 
-write_csv('trainC', our_key)
+write_csv('testC', our_key)

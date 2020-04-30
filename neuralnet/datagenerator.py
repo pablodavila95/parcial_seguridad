@@ -32,4 +32,4 @@ def generate_data(filename, string_length, list_size):
     write_csv(filename)
 
 
-generate_data('test', 25, 10000)
+generate_data('testP', 25, 10000)
