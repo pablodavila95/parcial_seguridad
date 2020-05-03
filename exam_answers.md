@@ -1,3 +1,7 @@
+# Respuestas a examen parcial
+*Equipo: Eduardo Giadáns Zárate - A01411416
+         Pablo Emilio Dávila Rodríguez - A00513157
+         Rodrigo Rivera Guevara - A07025360*
 1.
     A.  Alice sends Bob A = 573450335
         Bob's secret number = 544097
