@@ -5,9 +5,9 @@
 
 
 1.
-    - A.  Alice sends Bob A = 573450335
-        Bob's secret number = 544097
-        Bob sends Alice B = 337242414
+    - A.  Alice sends Bob A = 573450335,
+        Bob's secret number = 544097,
+        Bob sends Alice B = 337242414,
         The private key is : 
         661737200
 
@@ -22,15 +22,17 @@
         - 1. Ciphertext: GAMDXCJUPOCHCYEDXMUK Key = 7 Alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' 
             len(Alphabet) = 26
 
-        - 2. get inv modulo of the key and alphabet length:
+        - 2. Get inv modulo of the key and alphabet length:
              inverse of (a)mod(c) is the value b that makes (a * b) % c == 1
              going trough values 0 to C-1 we find that the b that makes ((a * b) % c == 1) is 15
-        - 5. we use 15 as our new key
-        - 6. for every letter -> new letter is alphabet.index(letter in message)*nkey)%a.len:
+        - 5. We use 15 as our new key
+        - 6. For every letter -> new letter is alphabet.index(letter in message)*nkey)%a.len:
+        >>>
                                      Cipher: G A M  D X  C J U  P  O  C H C Y  E D X  M  U  K
                indexes of letters in Cipher: 6,0,12,3,23,2,9,20,15,14,2,7,2,24,4,3,23,12,20,10
                   indexes after conversion: 12,0,24,19,7,4,5,14,17,2,4,1,4,22,8,19,7,24,14,20
                     indexes to new letters: M  A Y  T  H E F O  R  C E B E W  I T  H Y  O  U
+                    .
         - 7. plaintext -> MAYTHEFORCEBEWITHYOU
 
     
