@@ -103,8 +103,7 @@
     - A.  The encrypted message for Alice is: 343231970106150475720500
 
     - B.  
-
-    
+        >>
         p = 805853
         q = 1012093
         n = 815598180329
@@ -113,6 +112,7 @@
         d = 207791208977
         Bob's public key = (815598180329, 65537)
         Bob's private key = (815598180329, 207791208977)
+        .
 
     - C.  The string to send is 182121111 411101220. To encrypt, Alice would take the public key from Bob and use it to encrypt the message with the caveat that the message will
         be split in 2 to fit inside the RSA key length (Bob's key is quite short).
