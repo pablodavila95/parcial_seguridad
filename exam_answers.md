@@ -59,6 +59,7 @@
     - A.  Hexadecimal alphabet = {'0123456789ABCDEF'} len(Alphabet) = 16 len(Ciphertext) = 20
           Worst-case scenario takes place when the length of the key equals the length of the plaintext
           so len(key) = len(Ciphertext)
+
           >>
           keys = number of choices in alphabet ^  number of choices in key which is len(key)
           keys = 16^20 = 1.208925819614629174706176 × 10^24 keys
@@ -68,6 +69,7 @@
 
     - B.  Worst-case scenario, the last key analyzed is the correct key
           so Time = (1.208925819614629174706176 × 10^24) * 0.15ms
+          
           >>
           Time = 1.813×10^23 ms
           according to wolfram, that's about 5.746×10^12 average Gregorian years
