@@ -25,10 +25,10 @@
         - 3. We use 15 as our new key
         - 4. For every letter -> new letter is alphabet.index(letter in message)*nkey)%a.len:
         
-                                     Cipher: G A M  D X  C J U  P  O  C H C Y  E D X  M  U  K
-               indexes of letters in Cipher: 6,0,12,3,23,2,9,20,15,14,2,7,2,24,4,3,23,12,20,10
-                   indexes after conversion: 12,0,24,19,7,4,5,14,17,2,4,1,4,22,8,19,7,24,14,20
-                     indexes to new letters: M  A Y  T  H E F O  R  C E B E W  I T  H Y  O  U
+                                            Cipher: G A M  D X  C J U  P  O  C H C Y  E D X  M  U  K
+                      indexes of letters in Cipher: 6,0,12,3,23,2,9,20,15,14,2,7,2,24,4,3,23,12,20,10
+                          indexes after conversion: 12,0,24,19,7,4,5,14,17,2,4,1,4,22,8,19,7,24,14,20
+                            indexes to new letters: M  A Y  T  H E F O  R  C E B E W  I T  H Y  O  U
                     
         - 5. plaintext -> MAYTHEFORCEBEWITHYOU
 
@@ -99,16 +99,16 @@
 8.  
     - A.  The encrypted message for Alice is: 343231970106150475720500
 
-    - B.  
-        
-        p = 805853
-        q = 1012093
-        n = 815598180329
-        phi = 815596362384
-        e = 65537
-        d = 207791208977
-        Bob's public key = (815598180329, 65537)
-        Bob's private key = (815598180329, 207791208977)
+    - B. 
+                  
+                  p = 805853
+                  q = 1012093
+                  n = 815598180329
+                  phi = 815596362384
+                  e = 65537
+                  d = 207791208977
+                  Public key = (815598180329, 65537)
+                  Private key = (815598180329, 207791208977)
         
 
     - C.  The string to send is 182121111 411101220. To encrypt, Alice would take the public key from Bob and use it to encrypt the message with the caveat that the message will
