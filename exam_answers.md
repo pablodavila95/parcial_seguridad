@@ -82,13 +82,10 @@
 
     - B.  If the key length is 10, the number of combinations is 2^10.
 
-    - C.  It is the same as in the one-time pad cipher, 2^10. Based on the formula defined in A.
+    - C.  The number of combinations with a key length of 10 and an alphabet of 2 would be 10^2 for the permutation cipher, as the number
+    of elements in the key and the plaintext is different. Otherwise, it would be 2!
 
-    >> Incorrecto. El problema es que muchas de las llaves darán como resultado repeticiones en el texto cifrado, lo que reduce significativamente el número de textos cifrados únicos que pueden producirse al usar el encriptador de permutataciones.
-
-    - D.  Because we are using binary, it produces the same degree of security as the one-time pad cipher (the safest encryption) so we can argue that permutation cipher is safe in this case.
-
-    >> Incorrecto. Al corregir la pregunta 6C verán las razones.
+    - D.  It is not secure because the number of combinations very low compared to other algorithms and should not be used in this case.
 
 7.  
     - A.  We can decipher the key bits with the exposed plaintext using XOR to reverse the operation bit by bit. Using this we know so far that the key is 
